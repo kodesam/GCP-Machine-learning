@@ -1,0 +1,15 @@
+2024-03-19 13:00:48,435 DEBUG    root            Loaded Command Group: ['gcloud', 'config']
+2024-03-19 13:00:48,488 DEBUG    root            Loaded Command Group: ['gcloud', 'config', 'set']
+2024-03-19 13:00:48,492 DEBUG    root            Running [gcloud.config.set] with arguments: [SECTION/PROPERTY: "compute/region", VALUE: "us-east1"]
+2024-03-19 13:00:48,578 DEBUG    google.auth.transport.requests Making request: GET http://metadata.google.internal/computeMetadata/v1/instance/service-accounts/454774945873-compute@developer.gserviceaccount.com/?recursive=true
+2024-03-19 13:00:48,582 DEBUG    urllib3.connectionpool Starting new HTTP connection (1): metadata.google.internal:80
+2024-03-19 13:00:48,585 DEBUG    urllib3.connectionpool http://metadata.google.internal:80 "GET /computeMetadata/v1/instance/service-accounts/454774945873-compute@developer.gserviceaccount.com/?recursive=true HTTP/1.1" 200 154
+2024-03-19 13:00:48,586 DEBUG    google.auth.transport.requests Making request: GET http://metadata.google.internal/computeMetadata/v1/instance/service-accounts/454774945873-compute@developer.gserviceaccount.com/token
+2024-03-19 13:00:48,605 DEBUG    urllib3.connectionpool http://metadata.google.internal:80 "GET /computeMetadata/v1/instance/service-accounts/454774945873-compute@developer.gserviceaccount.com/token HTTP/1.1" 200 870
+2024-03-19 13:00:48,988 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): compute.googleapis.com:443
+2024-03-19 13:00:49,854 DEBUG    urllib3.connectionpool https://compute.googleapis.com:443 "GET /compute/v1/projects/qwiklabs-gcp-00-a616f4f64d00/regions?alt=json&maxResults=500 HTTP/1.1" 200 None
+2024-03-19 13:00:49,882 INFO     ___FILE_ONLY___ Updated property [compute/region].
+
+2024-03-19 13:00:49,884 DEBUG    root            Chosen display Format:default
+2024-03-19 13:00:49,886 INFO     root            Display format: "default"
+2024-03-19 13:00:49,887 DEBUG    root            SDK update checks are disabled.
